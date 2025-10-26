@@ -1,0 +1,118 @@
+:root {
+    /* Modern blue / purple palette */
+    --bg: #071029; /* deep navy */
+    --bg-light: #0f1b33; /* slightly lighter panel */
+    --panel: rgba(15, 21, 43, 0.88);
+    --accent: #3b82f6; /* primary blue */
+    --accent-dark: #2563eb; /* darker blue */
+    --accent-light: #8b5cf6; /* purple highlight */
+    --accent-rgb: 59, 130, 246;
+    --accent-light-rgb: 139, 92, 246;
+    --text: #ffffff; /* all main text will be white */
+    --muted: #9fb4d9; /* muted bluish text (kept for small accents) */
+    --success: #34d399;
+    --danger: #f87171;
+
+    /* typography controls */
+    --body-weight: 400;
+    --heading-weight: 700;
+    --lead-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top, rgba(59, 130, 246, 0.12), transparent), var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-weight: var(--body-weight);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    flex: 1;
+    width: 100%;
+}
+
+.hero {
+    padding: 4rem 1.5rem 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: rgba(15, 23, 42, 0.8);
+    font-size: 1rem;
+}
+
+.darkveil-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.darkveil-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: contrast(1.05) brightness(0.85);
+}
