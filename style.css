@@ -78,12 +78,11 @@ nav a {
 }
 
 nav a:hover {
-    color: rgba(31, 215, 232, 0.873);
+  color: rgb(132, 0, 255);
 }
 
 nav a.active {
-    color: rgba(31, 215, 232, 0.873);
-    font-weight: bold;
+  color: rgb(132, 0, 255);
 }
 
 main {
@@ -164,7 +163,7 @@ footer {
     width: 1000px;
     padding: 30px 50px;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: rgba(255, 255, 255, 0.068);
     background-blend-mode: blur(15px);
 
     display: flex;
