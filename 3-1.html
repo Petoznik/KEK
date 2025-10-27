@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekonomix - Finanční trh a banky</title>
+  <link rel="stylesheet" href="hra.css" />
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="brand">Ekonomix</div>
+            <ul>
+                <li><a href="index.html">O nás</a></li>
+                <li><a href="výběr.html">Výběr hry</a></li>
+                <li><a href="pravidla.html">Pravidla</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="center-wrapper">
+  <div class="glass-container">
+    <h1>Finanční trh a banky</h1>
+
+    <div class="controls">
+      <label class="team-Count" for="teamCount">Počet týmů:</label>
+      <select class="teamCount" id="teamCount">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <button class="startGame" id="startGame">Spustit hru</button>
+    </div>
+    </div>
+    <div id="scoreboard"></div>
+
+    <div class="grid" id="gameGrid"></div>
+  </div>
+
+  <!-- Modal pro otázky -->
+  <div id="questionModal">
+    <div class="modal-content">
+      <h2>Otázka</h2>
+      <p id="questionText">Sem přidej otázku</p>
+      <div class="answers" id="answers"></div>
+      <button id="closeModal">Zavřít</button>
+    </div>
+  </div>
+
+  <!-- Modal pro vítěze -->
+  <div id="winnerModal">
+    <h2 id="winnerText"></h2>
+    <canvas id="chart" width="400" height="300"></canvas>
+  </div>
+
+<footer>
+        &copy; <span id="year"></span> Ekonomix. Všechna práva vyhrazena.
+    </footer>
+    <script type="module" src="DarkVeil.js"></script>
+  <script src="script3-1.js"></script>
+</body>
+</html>
