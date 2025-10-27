@@ -100,6 +100,8 @@ footer {
     padding: 1.5rem 1rem;
     background: rgba(15, 23, 42, 0.8);
     font-size: 1rem;
+    position: sticky;
+    bottom: 0;
 }
 
 .darkveil-wrapper {
@@ -115,4 +117,62 @@ footer {
     height: 100%;
     display: block;
     filter: contrast(1.05) brightness(0.85);
+}
+
+/* From Uiverse.io by ShrinilDhorda */ 
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+.glass-container{
+    height: 520px;
+    width: 1000px;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.11);
+    background-blend-mode: blur(15px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 185%;
+}
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.center-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
